@@ -17,6 +17,8 @@
     <nav aria-label="Main">
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#languages">Languages</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -542,36 +544,581 @@
   </article>
 </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li>
-          <h3>Dassault Systèmes</h3>
-          <p>Internship. Model-based systems engineering (MBSE) and Java plugins for CATIA Magic.</p>
-        </li>
-        <li>
-          <h3>APTIV / Versigent, Tangier</h3>
-          <p>Internship. Add one line on what you worked on.</p>
-        </li>
-        <li>
-          <h3>Yazaki, Tangier</h3>
-          <p>Internship. Add one line on what you worked on.</p>
-        </li>
-      </ul>
-      <h3 class="subhead">Education</h3>
-      <ul class="plain">
-        <li>Master's in embedded electronics, Université de Lorraine (2024–2025)</li>
-        <li>Engineering degree, ENSA Tangier (2019–2024)</li>
-      </ul>
-    </section>
+    <!-- Replace the whole <section id="experience"> ... </section> in index.html with this block.
+     Also append exp-section.css to the end of style.css.
+     Logos: put your logo files in images/logos/ (dassault.png, aptiv.png, yazaki.png).
+     Until a logo file exists, the badge shows the company initials. -->
+<section id="experience">
+  <h2>Experience</h2>
+  <p class="lead">Open a role for details, or select a tool to see where I used it.</p>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="chips">
-        <li>STM32</li><li>ESP32</li><li>CAN</li><li>Altium Designer</li>
-        <li>MATLAB</li><li>Python</li><li>MBSE</li>
-      </ul>
-    </section>
+  <div class="xp-filters" role="group" aria-label="Filter by tool">
+    <button class="xp-chip" type="button" data-tag="Java" aria-pressed="false">Java</button>
+    <button class="xp-chip" type="button" data-tag="CATIA Magic" aria-pressed="false">CATIA Magic</button>
+    <button class="xp-chip" type="button" data-tag="GitLab" aria-pressed="false">GitLab</button>
+    <button class="xp-chip" type="button" data-tag="Altium Designer" aria-pressed="false">Altium Designer</button>
+    <button class="xp-chip" type="button" data-tag="Proteus 8" aria-pressed="false">Proteus 8</button>
+    <button class="xp-chip" type="button" data-tag="LabVIEW" aria-pressed="false">LabVIEW</button>
+    <button class="xp-chip" type="button" data-tag="CATIA V5" aria-pressed="false">CATIA V5</button>
+  </div>
+  <p class="xp-note" aria-live="polite"></p>
+
+  <ol class="xp-timeline">
+
+    <li class="xp-item open" data-tags="Java|CATIA Magic|MBSE|API integration|GitLab">
+      <span class="xp-dot" aria-hidden="true"></span>
+      <div class="xp-card">
+        <button class="xp-head" type="button" aria-expanded="true" aria-controls="xp-1">
+          <span class="xp-logo"><span class="xp-mono">DS</span><img src="images/logos/dassault.png" alt="" onerror="this.remove()"></span>
+          <span class="xp-main">
+            <strong class="xp-role">MBSE Engineer, Intern</strong>
+            <span class="xp-co">Dassault Systèmes</span>
+            <span class="xp-meta">R&amp;D Software, Electronics branch · Brest, France</span>
+          </span>
+          <span class="xp-date">Apr – Sep 2025</span>
+          <span class="xp-chev" aria-hidden="true"></span>
+        </button>
+        <div class="xp-panel" id="xp-1">
+          <div class="xp-inner">
+            <ul>
+              <li>Developed Java plugins for CATIA Magic to support model-based modeling of electronic architectures.</li>
+              <li>Contributed to electronic architecture workflows and to interoperability with external engineering platforms through API integration.</li>
+              <li>Used GitLab for version control, and CATIA Magic for functional testing and user-experience evaluation.</li>
+            </ul>
+            <p class="xp-tags">
+              <span class="xp-tag" data-tag="Java">Java</span>
+              <span class="xp-tag" data-tag="CATIA Magic">CATIA Magic</span>
+              <span class="xp-tag" data-tag="MBSE">MBSE</span>
+              <span class="xp-tag" data-tag="API integration">API integration</span>
+              <span class="xp-tag" data-tag="GitLab">GitLab</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="xp-item" data-tags="Altium Designer|Proteus 8|Power supply design">
+      <span class="xp-dot" aria-hidden="true"></span>
+      <div class="xp-card">
+        <button class="xp-head" type="button" aria-expanded="false" aria-controls="xp-2">
+          <span class="xp-logo"><span class="xp-mono">AP</span><img src="images/logos/aptiv.png" alt="" onerror="this.remove()"></span>
+          <span class="xp-main">
+            <strong class="xp-role">Electrical Engineer, Intern</strong>
+            <span class="xp-co">APTIV (Versigent)</span>
+            <span class="xp-meta">Engineering department · Tangier, Morocco</span>
+          </span>
+          <span class="xp-date">Mar – Jul 2024</span>
+          <span class="xp-chev" aria-hidden="true"></span>
+        </button>
+        <div class="xp-panel" id="xp-2">
+          <div class="xp-inner">
+            <ul>
+              <li>Improved and optimized ultrasonic welding machines for the automotive industry.</li>
+              <li>Designed and built an uninterruptible power supply circuit for the machines, based on an inverter and a battery charger, using Proteus 8 and Altium Designer.</li>
+              <li>Replaced hard-disk storage with cloud-based non-volatile flash memory.</li>
+              <li>Carried out a forecast economic analysis and assembled the hardware in the factory.</li>
+            </ul>
+            <p class="xp-tags">
+              <span class="xp-tag" data-tag="Altium Designer">Altium Designer</span>
+              <span class="xp-tag" data-tag="Proteus 8">Proteus 8</span>
+              <span class="xp-tag" data-tag="Power supply design">Power supply design</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="xp-item" data-tags="LabVIEW|Automation Studio|CATIA V5|Root-cause analysis">
+      <span class="xp-dot" aria-hidden="true"></span>
+      <div class="xp-card">
+        <button class="xp-head" type="button" aria-expanded="false" aria-controls="xp-3">
+          <span class="xp-logo"><span class="xp-mono">YZ</span><img src="images/logos/yazaki.png" alt="" onerror="this.remove()"></span>
+          <span class="xp-main">
+            <strong class="xp-role">Process Engineer, Intern</strong>
+            <span class="xp-co">Yazaki Corporation</span>
+            <span class="xp-meta">Process department · Tangier, Morocco</span>
+          </span>
+          <span class="xp-date">Jul – Sep 2023</span>
+          <span class="xp-chev" aria-hidden="true"></span>
+        </button>
+        <div class="xp-panel" id="xp-3">
+          <div class="xp-inner">
+            <ul>
+              <li>Designed a smart overhead conveyor system for transporting wire harnesses, and carried out its feasibility study.</li>
+              <li>Automated and synchronized the system with Automation Studio and LabVIEW.</li>
+              <li>Applied root-cause and problem-solving tools: Ishikawa diagram, Pareto diagram, 5 Whys and FMEA.</li>
+              <li>Assembled the conveyor system in CATIA V5.</li>
+            </ul>
+            <p class="xp-tags">
+              <span class="xp-tag" data-tag="LabVIEW">LabVIEW</span>
+              <span class="xp-tag" data-tag="Automation Studio">Automation Studio</span>
+              <span class="xp-tag" data-tag="CATIA V5">CATIA V5</span>
+              <span class="xp-tag" data-tag="Root-cause analysis">Root-cause analysis</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ol>
+
+
+  <script>
+    (function () {
+      var root = document.getElementById("experience");
+      if (!root) return;
+
+      var items = root.querySelectorAll(".xp-item");
+      var chips = root.querySelectorAll(".xp-chip");
+      var note = root.querySelector(".xp-note");
+      var active = null;
+
+      function setOpen(item, open) {
+        item.classList.toggle("open", open);
+        item.querySelector(".xp-head").setAttribute("aria-expanded", String(open));
+      }
+
+      items.forEach(function (item) {
+        item.querySelector(".xp-head").addEventListener("click", function () {
+          setOpen(item, !item.classList.contains("open"));
+        });
+      });
+
+      function filter(tag) {
+        active = active === tag ? null : tag;
+        var hits = [];
+
+        chips.forEach(function (c) {
+          c.setAttribute("aria-pressed", String(c.getAttribute("data-tag") === active));
+        });
+
+        items.forEach(function (item) {
+          var match = !active || item.getAttribute("data-tags").split("|").indexOf(active) > -1;
+          item.classList.toggle("dim", !match);
+          item.querySelectorAll(".xp-tag").forEach(function (t) {
+            t.classList.toggle("hit", !!active && t.getAttribute("data-tag") === active);
+          });
+          if (active && match) {
+            setOpen(item, true);
+            hits.push(item.querySelector(".xp-co").textContent);
+          }
+        });
+
+        note.textContent = active ? active + " used at: " + hits.join(", ") + "." : "";
+      }
+
+      chips.forEach(function (c) {
+        c.addEventListener("click", function () { filter(c.getAttribute("data-tag")); });
+      });
+    })();
+  </script>
+</section>
+<!-- Add this block right after the closing </section> of the Experience section in index.html.
+     It reuses the styles from exp-section.css, so that file must already be in style.css.
+     Logos: put lorraine.png and ensa.png in images/logos/. Until they exist, the badge shows initials. -->
+<section id="education">
+  <h2>Education</h2>
+  <p class="lead">Open a degree to see its main courses.</p>
+
+  <ol class="xp-timeline">
+
+    <li class="xp-item open">
+      <span class="xp-dot" aria-hidden="true"></span>
+      <div class="xp-card">
+        <button class="xp-head" type="button" aria-expanded="true" aria-controls="edu-1">
+          <span class="xp-logo"><span class="xp-mono">UL</span><img src="images/logos/lorraine.png" alt="" onerror="this.remove()"></span>
+          <span class="xp-main">
+            <strong class="xp-role">Master’s in Embedded Electronics</strong>
+            <span class="xp-co">Université de Lorraine</span>
+            <span class="xp-meta">Nancy, France</span>
+          </span>
+          <span class="xp-date">2024 – 2025</span>
+          <span class="xp-chev" aria-hidden="true"></span>
+        </button>
+        <div class="xp-panel" id="edu-1">
+          <div class="xp-inner">
+            <p class="edu-label">Main courses</p>
+            <p class="xp-tags">
+              <span class="xp-tag">System-level SoC modeling</span>
+              <span class="xp-tag">Architectural design of digital and mixed circuits</span>
+              <span class="xp-tag">Artificial intelligence</span>
+              <span class="xp-tag">Real-time and embedded systems</span>
+              <span class="xp-tag">Smart sensors and sensor networks</span>
+              <span class="xp-tag">Testability of digital integrated circuits</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="xp-item">
+      <span class="xp-dot" aria-hidden="true"></span>
+      <div class="xp-card">
+        <button class="xp-head" type="button" aria-expanded="false" aria-controls="edu-2">
+          <span class="xp-logo"><span class="xp-mono xp-mono-sm">ENSA</span><img src="images/logos/ensa.png" alt="" onerror="this.remove()"></span>
+          <span class="xp-main">
+            <strong class="xp-role">Engineering Degree in Electronic and Automatic Systems</strong>
+            <span class="xp-co">École Nationale des Sciences Appliquées (ENSA)</span>
+            <span class="xp-meta">Tangier, Morocco</span>
+          </span>
+          <span class="xp-date">2019 – 2024</span>
+          <span class="xp-chev" aria-hidden="true"></span>
+        </button>
+        <div class="xp-panel" id="edu-2">
+          <div class="xp-inner">
+            <p class="edu-label">Main courses</p>
+            <p class="xp-tags">
+              <span class="xp-tag">Embedded systems</span>
+              <span class="xp-tag">Power electronics</span>
+              <span class="xp-tag">Robotics</span>
+              <span class="xp-tag">Image processing</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ol>
+
+  <script>
+    (function () {
+      var root = document.getElementById("education");
+      if (!root) return;
+
+      root.querySelectorAll(".xp-item").forEach(function (item) {
+        var head = item.querySelector(".xp-head");
+        head.addEventListener("click", function () {
+          var open = !item.classList.contains("open");
+          item.classList.toggle("open", open);
+          head.setAttribute("aria-expanded", String(open));
+        });
+      });
+    })();
+  </script>
+</section>
+<!-- Add this block in index.html, for example right after the Education section.
+     Also append lang-section.css to the end of style.css. -->
+<section id="languages">
+  <h2>Languages</h2>
+  <p class="lead">Select a card to read a short introduction in that language.</p>
+
+  <div class="lg-grid">
+
+    <article class="lg-card">
+      <div class="lg-band"><span class="lg-greet" lang="fr">Bonjour</span></div>
+      <div class="lg-body">
+        <h3 class="lg-name">French <span class="lg-native" lang="fr">Français</span></h3>
+        <p class="lg-level">Professional</p>
+        <div class="lg-meter" role="img" aria-label="Level: professional, 3 out of 4">
+          <span class="lg-seg on"></span><span class="lg-seg on"></span><span class="lg-seg on"></span><span class="lg-seg"></span>
+        </div>
+        <p class="lg-scale" aria-hidden="true"><span>Basic</span><span>Native</span></p>
+        <button class="lg-say" type="button" aria-expanded="false" aria-controls="lg-1">Introduce myself</button>
+        <div class="lg-reveal" id="lg-1">
+          <div class="lg-inner">
+            <p class="lg-sample" lang="fr">“Je suis ingénieur en électronique embarquée.”</p>
+            <p class="lg-trans">I am an embedded electronics engineer.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="lg-card">
+      <div class="lg-band"><span class="lg-greet" lang="en">Hello</span></div>
+      <div class="lg-body">
+        <h3 class="lg-name">English</h3>
+        <p class="lg-level">Professional</p>
+        <div class="lg-meter" role="img" aria-label="Level: professional, 3 out of 4">
+          <span class="lg-seg on"></span><span class="lg-seg on"></span><span class="lg-seg on"></span><span class="lg-seg"></span>
+        </div>
+        <p class="lg-scale" aria-hidden="true"><span>Basic</span><span>Native</span></p>
+        <p class="lg-badge">ICIMS C1 certificate</p>
+        <button class="lg-say" type="button" aria-expanded="false" aria-controls="lg-2">Introduce myself</button>
+        <div class="lg-reveal" id="lg-2">
+          <div class="lg-inner">
+            <p class="lg-sample" lang="en">“I am an embedded electronics engineer.”</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="lg-card">
+      <div class="lg-band"><span class="lg-greet" lang="ar" dir="rtl">مرحبًا</span></div>
+      <div class="lg-body">
+        <h3 class="lg-name">Arabic <span class="lg-native" lang="ar" dir="rtl">العربية</span></h3>
+        <p class="lg-level">Native</p>
+        <div class="lg-meter" role="img" aria-label="Level: native, 4 out of 4">
+          <span class="lg-seg on"></span><span class="lg-seg on"></span><span class="lg-seg on"></span><span class="lg-seg on"></span>
+        </div>
+        <p class="lg-scale" aria-hidden="true"><span>Basic</span><span>Native</span></p>
+        <button class="lg-say" type="button" aria-expanded="false" aria-controls="lg-3">Introduce myself</button>
+        <div class="lg-reveal" id="lg-3">
+          <div class="lg-inner">
+            <p class="lg-sample" lang="ar" dir="rtl">«أنا مهندس في الإلكترونيات المدمجة.»</p>
+            <p class="lg-trans">I am an embedded electronics engineer.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <script>
+    (function () {
+      var root = document.getElementById("languages");
+      if (!root) return;
+
+      // Meters fill when the section scrolls into view
+      root.classList.add("lg-anim");
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            root.classList.add("in-view");
+            io.disconnect();
+          }
+        }, { threshold: 0.25 });
+        io.observe(root);
+      } else {
+        root.classList.add("in-view");
+      }
+
+      // Open and close the introduction on each card
+      root.querySelectorAll(".lg-card").forEach(function (card) {
+        var btn = card.querySelector(".lg-say");
+        btn.addEventListener("click", function () {
+          var open = !card.classList.contains("open");
+          card.classList.toggle("open", open);
+          btn.setAttribute("aria-expanded", String(open));
+          btn.textContent = open ? "Hide" : "Introduce myself";
+        });
+      });
+    })();
+  </script>
+</section>
+
+
+
+
+    <!-- Replace the whole <section id="skills"> ... </section> in index.html with this block.
+     Also append skills-section.css to the end of style.css. -->
+<section id="skills">
+  <h2>Skills</h2>
+  <p class="lead">Pick a category, then a skill to see where I used it.</p>
+
+  <div class="sk-wrap">
+
+    <div class="sk-tabs" role="tablist" aria-label="Skill categories">
+      <button class="sk-tab" type="button" role="tab" id="sk-t1" aria-controls="sk-p1" aria-selected="true">
+        <span class="sk-tab-name">Embedded systems</span><span class="sk-count"></span>
+      </button>
+      <button class="sk-tab" type="button" role="tab" id="sk-t2" aria-controls="sk-p2" aria-selected="false">
+        <span class="sk-tab-name">Electronics</span><span class="sk-count"></span>
+      </button>
+      <button class="sk-tab" type="button" role="tab" id="sk-t3" aria-controls="sk-p3" aria-selected="false">
+        <span class="sk-tab-name">PCB design</span><span class="sk-count"></span>
+      </button>
+      <button class="sk-tab" type="button" role="tab" id="sk-t4" aria-controls="sk-p4" aria-selected="false">
+        <span class="sk-tab-name">Communication protocols</span><span class="sk-count"></span>
+      </button>
+      <button class="sk-tab" type="button" role="tab" id="sk-t5" aria-controls="sk-p5" aria-selected="false">
+        <span class="sk-tab-name">Modeling and systems engineering</span><span class="sk-count"></span>
+      </button>
+      <button class="sk-tab" type="button" role="tab" id="sk-t6" aria-controls="sk-p6" aria-selected="false">
+        <span class="sk-tab-name">Software and tools</span><span class="sk-count"></span>
+      </button>
+    </div>
+
+    <div class="sk-main">
+
+      <div class="sk-panel" id="sk-p1" role="tabpanel" aria-labelledby="sk-t1">
+        <h3 class="sk-cat">Embedded systems</h3>
+        <div class="sk-chips">
+          <button class="sk-chip" type="button">STM32</button>
+          <button class="sk-chip" type="button">ESP32</button>
+          <button class="sk-chip" type="button">ARM Cortex-M</button>
+          <button class="sk-chip" type="button">Microcontrollers</button>
+          <button class="sk-chip" type="button">Embedded C/C++</button>
+          <button class="sk-chip" type="button" data-uses="lab">HIL</button>
+          <button class="sk-chip" type="button" data-uses="lab">Vector CANoe</button>
+        </div>
+      </div>
+
+      <div class="sk-panel" id="sk-p2" role="tabpanel" aria-labelledby="sk-t2">
+        <h3 class="sk-cat">Electronics</h3>
+        <div class="sk-chips">
+          <button class="sk-chip" type="button">Analog electronics</button>
+          <button class="sk-chip" type="button">Digital electronics</button>
+          <button class="sk-chip" type="button">Sensors</button>
+          <button class="sk-chip" type="button" data-uses="ap">Power electronics</button>
+        </div>
+      </div>
+
+      <div class="sk-panel" id="sk-p3" role="tabpanel" aria-labelledby="sk-t3">
+        <h3 class="sk-cat">PCB design</h3>
+        <div class="sk-chips">
+          <button class="sk-chip" type="button" data-uses="hv,ap">Altium Designer</button>
+          <button class="sk-chip" type="button">KiCad</button>
+          <button class="sk-chip" type="button" data-uses="hv">Schematic capture</button>
+          <button class="sk-chip" type="button" data-uses="hv">PCB layout</button>
+          <button class="sk-chip" type="button" data-uses="hv">Component placement</button>
+          <button class="sk-chip" type="button" data-uses="hv">Routing</button>
+          <button class="sk-chip" type="button">DRC</button>
+        </div>
+      </div>
+
+      <div class="sk-panel" id="sk-p4" role="tabpanel" aria-labelledby="sk-t4">
+        <h3 class="sk-cat">Communication protocols</h3>
+        <div class="sk-chips">
+          <button class="sk-chip" type="button">UART</button>
+          <button class="sk-chip" type="button">SPI</button>
+          <button class="sk-chip" type="button">I²C</button>
+          <button class="sk-chip" type="button">CAN</button>
+          <button class="sk-chip" type="button">RS-232/485</button>
+          <button class="sk-chip" type="button">Ethernet</button>
+        </div>
+      </div>
+
+      <div class="sk-panel" id="sk-p5" role="tabpanel" aria-labelledby="sk-t5">
+        <h3 class="sk-cat">Modeling and systems engineering</h3>
+        <div class="sk-chips">
+          <button class="sk-chip" type="button">SysML</button>
+          <button class="sk-chip" type="button" data-uses="ds">MBSE</button>
+          <button class="sk-chip" type="button" data-uses="ds">CATIA Magic</button>
+          <button class="sk-chip" type="button">IBM DOORS</button>
+          <button class="sk-chip" type="button">Cameo Systems Modeler</button>
+          <button class="sk-chip" type="button">Requirements engineering</button>
+          <button class="sk-chip" type="button">System architecture</button>
+        </div>
+      </div>
+
+      <div class="sk-panel" id="sk-p6" role="tabpanel" aria-labelledby="sk-t6">
+        <h3 class="sk-cat">Software and tools</h3>
+        <div class="sk-chips">
+          <button class="sk-chip" type="button" data-uses="face">Python</button>
+          <button class="sk-chip" type="button" data-uses="ds">Java</button>
+          <button class="sk-chip" type="button" data-uses="lab">MATLAB</button>
+          <button class="sk-chip" type="button" data-uses="yz">LabVIEW</button>
+          <button class="sk-chip" type="button" data-uses="ds">GitLab</button>
+          <button class="sk-chip" type="button" data-uses="face">OpenCV</button>
+          <button class="sk-chip" type="button" data-uses="ap">Proteus 8</button>
+          <button class="sk-chip" type="button" data-uses="yz">CATIA V5</button>
+          <button class="sk-chip" type="button" data-uses="yz">Automation Studio</button>
+        </div>
+      </div>
+
+      <p class="sk-legend"><span class="sk-dot" aria-hidden="true"></span> Used in a project or internship on this page</p>
+
+      <div class="sk-detail" aria-live="polite">
+        <p class="sk-hint">Select a skill to see where I used it.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.getElementById("skills");
+      if (!root) return;
+
+      var USES = {
+        hv:   { type: "Project",    name: "DC high-voltage measurement board",          href: "#projects" },
+        lab:  { type: "Project",    name: "Elastic-wave neural network test bench",      href: "#projects" },
+        face: { type: "Project",    name: "Face-recognition attendance system",          href: "#projects" },
+        ds:   { type: "Internship", name: "Dassault Systèmes",                           href: "#experience" },
+        ap:   { type: "Internship", name: "APTIV (Versigent)",                           href: "#experience" },
+        yz:   { type: "Internship", name: "Yazaki Corporation",                          href: "#experience" }
+      };
+
+      var tabs = Array.prototype.slice.call(root.querySelectorAll(".sk-tab"));
+      var panels = Array.prototype.slice.call(root.querySelectorAll(".sk-panel"));
+      var chips = root.querySelectorAll(".sk-chip");
+      var detail = root.querySelector(".sk-detail");
+
+      root.classList.add("sk-js");
+
+      panels.forEach(function (p, i) {
+        var n = p.querySelectorAll(".sk-chip").length;
+        tabs[i].querySelector(".sk-count").textContent = n + (n === 1 ? " skill" : " skills");
+      });
+
+      function clearDetail() {
+        chips.forEach(function (c) { c.setAttribute("aria-pressed", "false"); });
+        detail.innerHTML = "";
+        var hint = document.createElement("p");
+        hint.className = "sk-hint";
+        hint.textContent = "Select a skill to see where I used it.";
+        detail.appendChild(hint);
+      }
+
+      function showTab(i, focus) {
+        tabs.forEach(function (t, j) {
+          t.setAttribute("aria-selected", String(i === j));
+          t.tabIndex = i === j ? 0 : -1;
+          panels[j].hidden = i !== j;
+        });
+        clearDetail();
+        if (focus) tabs[i].focus();
+      }
+
+      tabs.forEach(function (t, i) {
+        t.addEventListener("click", function () { showTab(i, false); });
+        t.addEventListener("keydown", function (e) {
+          var next = null;
+          if (e.key === "ArrowDown" || e.key === "ArrowRight") next = (i + 1) % tabs.length;
+          if (e.key === "ArrowUp" || e.key === "ArrowLeft") next = (i - 1 + tabs.length) % tabs.length;
+          if (e.key === "Home") next = 0;
+          if (e.key === "End") next = tabs.length - 1;
+          if (next !== null) { e.preventDefault(); showTab(next, true); }
+        });
+      });
+
+      chips.forEach(function (chip) {
+        chip.setAttribute("aria-pressed", "false");
+        chip.addEventListener("click", function () {
+          chips.forEach(function (c) { c.setAttribute("aria-pressed", "false"); });
+          chip.setAttribute("aria-pressed", "true");
+
+          detail.innerHTML = "";
+          var title = document.createElement("h4");
+          title.textContent = chip.textContent;
+          detail.appendChild(title);
+
+          var keys = chip.getAttribute("data-uses");
+          if (!keys) {
+            var core = document.createElement("p");
+            core.textContent = "Part of my core skill set.";
+            detail.appendChild(core);
+            return;
+          }
+
+          var label = document.createElement("p");
+          label.className = "sk-label";
+          label.textContent = "Where I used it";
+          detail.appendChild(label);
+
+          var list = document.createElement("ul");
+          list.className = "sk-uses";
+          keys.split(",").forEach(function (k) {
+            var u = USES[k];
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.href = u.href;
+            var type = document.createElement("span");
+            type.textContent = u.type;
+            a.appendChild(type);
+            a.appendChild(document.createTextNode(" " + u.name));
+            li.appendChild(a);
+            list.appendChild(li);
+          });
+          detail.appendChild(list);
+        });
+      });
+
+      showTab(0, false);
+    })();
+  </script>
+</section>
+
 
     <section id="contact">
       <h2>Contact</h2>
